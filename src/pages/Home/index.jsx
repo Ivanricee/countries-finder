@@ -1,16 +1,18 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { StyledCountries } from './styles'
+import { StyledHome } from './styles'
 import { FilterCountries } from '../../components/FilterCountries'
+import { Countries } from '../../components/Countries'
 
-export const Countries = () => {
+export const Home = () => {
     return (
-        <StyledCountries>
+        <StyledHome>
             <Helmet>
                 <title> Countries </title>
                 <meta name="description" content="List of countries" />
             </Helmet>
             <FilterCountries />
-        </StyledCountries>
+            <Countries />
+        </StyledHome>
     )
 }

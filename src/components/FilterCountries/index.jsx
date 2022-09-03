@@ -12,8 +12,8 @@ export const FilterCountries = () => {
                 <input placeholder="Search for a country..." />
             </div>
             <div className="filter__select">
-                <select>
-                    <option value="" disabled selected hidden>
+                <select defaultValue="default">
+                    <option value="default" disabled hidden>
                         Filter by Region
                     </option>
                     <option vale="Africa">Africa</option>

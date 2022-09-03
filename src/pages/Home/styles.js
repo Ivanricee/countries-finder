@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const StyledCountries = styled.article`
+export const StyledHome = styled.article`
   background: ${p => p.theme.background};
 `

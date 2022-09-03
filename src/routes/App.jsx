@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { store } from '../store'
 
-import { Countries } from '../pages/Countries'
+import { Home } from '../pages/Home'
 import { Country } from '../pages/Country'
 import { NotFound } from '../pages/NotFound'
 import { Layout } from '../components/Layout'
@@ -14,7 +14,7 @@ export const App = () => {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        <Route path="/" element={<Countries />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/country/:code" element={<Country />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>

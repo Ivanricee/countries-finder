@@ -17,3 +17,24 @@ export const getLSThemeMode = () => {
     return undefined
   }
 }
+
+export const debounce = (callback, delay) => {
+  let timerId = null
+  return (...args) => {
+    if (timerId) clearTimeout(timerId)
+    timerId = setTimeout(() => callback(...args), delay)
+  }
+}
+
+export const throtle = (callback, delay) => {
+  let inThrothle = false
+  return (...args) => {
+    if (inThrothle) return
+    console.log('throtled')
+    callback(...args)
+    inThrothle = true
+    setTimeout(() => {
+      inThrothle = false
+    }, delay)
+  }
+}

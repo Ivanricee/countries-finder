@@ -16,6 +16,7 @@ export const StyledHeader = styled.header`
     font-size: 0.875rem;
   }
   .header__theme-mode {
+    cursor: pointer;
     div {
       font-size: 0.75rem;
       display: flex;
