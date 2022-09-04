@@ -15,7 +15,7 @@ export const App = () => {
                 <Layout>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/country/:code" element={<Country />} />
+                        <Route path="/country/:name" element={<Country />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>

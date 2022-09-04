@@ -3,7 +3,7 @@ const theme = {
   fontSizeItem: '1rem',
   white: 'hsl(0, 0%, 100%)',
   fontNunito: '"Nunito Sans", sans-serif',
-
+  color: 'hsl(210, 23.5%, 93.3%);',
   veryDarkBlue: 'hsl(207, 26%, 17%)',
   veryDarkBlueLight: 'hsl(200, 15%, 8%)',
   darkBlue: 'hsl(209, 23%, 22%)',
@@ -18,7 +18,7 @@ const theme = {
 const darkMode = {
   background: theme.veryDarkBlue,
   backgroundHeader: theme.darkBlue,
-  color: theme.white,
+  color: theme.color,
   boxShadow: `0px 0px 13.5px -5px ${theme.veryDarkBlueLight}`,
   //---------------
 
