@@ -12,10 +12,19 @@ export const StyledCountryCard = styled.div`
   background: ${p => p.theme.backgroundHeader};
   color: ${p => p.theme.color};
   inline-size: 16.44rem;
+  min-block-size: 15rem;
   border-radius: 0.35rem;
   overflow: hidden;
   padding-block-end: 1rem;
   box-shadow: ${p => p.theme.boxShadow};
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    :visited {
+      text-decoration: inherit;
+      color: inherit;
+    }
+  }
   img {
     inline-size: 100%;
     block-size: 10rem;

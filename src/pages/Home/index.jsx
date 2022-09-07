@@ -5,14 +5,14 @@ import { FilterCountries } from '../../components/FilterCountries'
 import { Countries } from '../../components/Countries'
 
 export const Home = () => {
-    return (
-        <StyledHome>
-            <Helmet>
-                <title> Countries </title>
-                <meta name="description" content="List of countries" />
-            </Helmet>
-            <FilterCountries />
-            <Countries />
-        </StyledHome>
-    )
+  return (
+    <StyledHome>
+      <Helmet>
+        <title> Countries </title>
+        <meta name="description" content="List of countries" />
+      </Helmet>
+      <FilterCountries />
+      <Countries />
+    </StyledHome>
+  )
 }

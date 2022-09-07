@@ -7,7 +7,22 @@ import { getLSThemeMode } from '../utils'
 const getTheme = getLSThemeMode()
 
 const INITIAL_STATE = {
-  app: { themeMode: getTheme || 'darkMode' },
+  app: {
+    themeMode: getTheme || 'darkMode',
+    countries: null,
+    cLoading: true,
+    cError: '',
+    countryBorders: null,
+    cBordersLoading: true,
+    cBordersError: '',
+    country: null,
+    countryLoading: true,
+    countryError: '',
+    filterCountries: null,
+    filterCError: '',
+    filterCLoading: false,
+    prevFilterValue: { type: '', value: '' },
+  },
 }
 
 export const store = createStore(

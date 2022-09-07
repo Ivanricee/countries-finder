@@ -9,17 +9,17 @@ import { NotFound } from '../pages/NotFound'
 import { Layout } from '../components/Layout'
 
 export const App = () => {
-    return (
-        <Provider store={store}>
-            <BrowserRouter>
-                <Layout>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/country/:name" element={<Country />} />
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                </Layout>
-            </BrowserRouter>
-        </Provider>
-    )
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/country/:name" element={<Country />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </Provider>
+  )
 }

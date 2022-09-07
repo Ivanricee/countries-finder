@@ -1,9 +1,9 @@
 const THEME_MODE = 'themeMode'
 export const setLSThemeMode = themeMode => {
   try {
-    localStorage.setItem(THEME_MODE, JSON.stringify(themeMode))
+    return localStorage.setItem(THEME_MODE, JSON.stringify(themeMode))
   } catch (err) {
-    console.log(err)
+    return err
   }
 }
 
