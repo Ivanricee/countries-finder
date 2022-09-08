@@ -6,7 +6,21 @@ export const StyledCountries = styled.section`
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2.5rem;
+  @media ${p => p.theme.breakPointsDevice.mobileS} {
+    display: flex;
+  }
+  @media ${p => p.theme.breakPointsDevice.desktop} {
+    margin: 1rem 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  @media ${p => p.theme.breakPointsDevice.desktopM} {
+    margin: 1rem 4.5rem;
+    gap: 5rem;
+  }
 `
 export const StyledCountryCard = styled.div`
   background: ${p => p.theme.backgroundHeader};

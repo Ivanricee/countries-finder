@@ -63,4 +63,27 @@ export const StyledFilterCountries = styled.section`
   input:focus {
     outline: none;
   }
+
+  @media ${p => p.theme.breakPointsDevice.desktop} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4.5rem 2rem 4.5rem;
+    .filter__select {
+      margin-block-start: 0;
+      inline-size: 11rem;
+      select {
+        font-size: 0.8rem;
+      }
+    }
+    .filter__input {
+      inline-size: 19rem;
+      input {
+        font-size: 0.8rem;
+      }
+      ::after {
+        transform: translateY(-35%);
+      }
+    }
+  }
 `

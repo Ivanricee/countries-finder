@@ -2,12 +2,10 @@ import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
-  padding-block-start: 2rem;
-  padding-block-end: 2rem;
+  padding: 2rem 1rem;
   background: ${p => p.theme.backgroundHeader};
   color: ${p => p.theme.color};
   box-shadow: ${p => p.theme.boxShadow};
@@ -26,5 +24,20 @@ export const StyledHeader = styled.header`
         font-weight: 600;
       }
     }
+  }
+  @media ${p => p.theme.breakPointsDevice.desktop} {
+    padding: 2rem;
+    h1 {
+      font-size: 1.2rem;
+    }
+    .header__theme-mode {
+      cursor: pointer;
+      div {
+        font-size: 1rem;
+      }
+    }
+  }
+  @media ${p => p.theme.breakPointsDevice.desktopM} {
+    padding: 2rem 4.5rem;
   }
 `

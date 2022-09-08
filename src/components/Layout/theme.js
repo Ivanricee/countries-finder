@@ -9,9 +9,10 @@ const theme = {
   darkBlue: 'hsl(209, 23%, 22%)',
   darkGray: 'hsl(0, 0%, 52%)',
   breakPointsDevice: {
-    mobile: 'screen and (max-width: 375px)',
-    desktop: 'screen and (max-width: 1440px)',
-    desktopL: 'screen and (min-width: 1441px)',
+    mobileS: 'screen and (max-width: 768px)',
+    mobile: 'screen and (min-width: 375px)',
+    desktop: 'screen and (min-width: 768px)',
+    desktopM: 'screen and (min-width: 1024px)',
   },
   boxShadow: '0px 0px 23px 3px #a6364d;',
 }
