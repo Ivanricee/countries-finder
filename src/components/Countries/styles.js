@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { fadeIn } from '../Layout/animation'
+import { CountryCard } from './CountryCard'
 
 export const StyledCountries = styled.section`
-  //background: ${p => (!p.countries ? 'red' : 'blue')};
   margin: 1rem 3.5rem;
   display: inline-flex;
   flex-direction: column;
@@ -22,7 +23,7 @@ export const StyledCountries = styled.section`
     gap: 5rem;
   }
 `
-export const StyledCountryCard = styled.div`
+export const StyledCountryCard = styled(CountryCard)`
   background: ${p => p.theme.backgroundHeader};
   color: ${p => p.theme.color};
   inline-size: 16.44rem;
@@ -43,6 +44,7 @@ export const StyledCountryCard = styled.div`
     inline-size: 100%;
     block-size: 10rem;
     object-fit: cover;
+    animation: ${fadeIn} 0.7s ease-in;
   }
   .card__body {
     margin: 1.5rem 1.5rem;

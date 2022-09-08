@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IoArrowBack } from 'react-icons/io5'
+import { Helmet } from 'react-helmet'
 import {
   fetchCountryBorders,
   fetchCountryByName,
@@ -71,6 +72,11 @@ export const Country = () => {
   return (
     <StyledCountry>
       {backButton()}
+
+      <Helmet>
+        <title> Country: {localCountry.name.common} </title>
+        <meta name="description" content="Country" />
+      </Helmet>
       <div className="country__content">
         <section className="content__img">
           <img
