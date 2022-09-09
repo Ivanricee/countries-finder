@@ -23,7 +23,7 @@ export const Countries = () => {
   if (error.length !== 0)
     return (
       <StyledCountries>
-        <div>Country Not Found</div>
+        <p>Country Not Found</p>
       </StyledCountries>
     )
   return (

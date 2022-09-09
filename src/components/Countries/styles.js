@@ -9,6 +9,7 @@ export const StyledCountries = styled.section`
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  color: ${p => p.theme.color};
   @media ${p => p.theme.breakPointsDevice.mobileS} {
     display: flex;
   }
