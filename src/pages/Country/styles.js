@@ -62,7 +62,9 @@ export const StyledCountry = styled.section`
     .content-f,
     .content-s {
       margin-block-end: 2rem;
-      & > div {
+      list-style: none;
+      padding-inline-start: 0;
+      & > li {
         display: flex;
         align-items: center;
         gap: 0.28rem;
@@ -108,6 +110,7 @@ export const StyledCountry = styled.section`
         flex: 1;
         display: flex;
         flex-wrap: wrap;
+        //transition: all 0.5s ease-in-out;
         h2 {
           flex-basis: 100%;
           margin-block-start: 0;
@@ -121,6 +124,9 @@ export const StyledCountry = styled.section`
         }
         .country__borders {
           flex-basis: 100%;
+        }
+        .country__borders-loader {
+          block-size: 1.5rem;
         }
       }
     }

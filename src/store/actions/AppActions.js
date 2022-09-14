@@ -8,13 +8,16 @@ const setLoading = (type, payload) => ({
   type,
   payload,
 })
-export const setLoadingCBorders = payload =>
-  setLoading('@countries/countryBorders-loading', payload)
-
 const setError = (type, payload) => ({
   type,
   payload,
 })
+export const setLoadingCBorders = payload =>
+  setLoading('@countries/countryBorders-loading', payload)
+
+export const resetErrorCountry = payload =>
+  setError('@countries/country-error', payload)
+
 export const fetchCountries = () => {
   return async dispatch => {
     try {

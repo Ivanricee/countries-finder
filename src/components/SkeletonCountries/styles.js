@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { skeletonIn } from '../Layout/animation'
 
-export const StyledSkeletonCountries = styled.section`
+export const StyledSkeletonCountries = styled.article`
   background: ${p => p.theme.backgroundHeader};
   color: ${p => p.theme.color};
   inline-size: 16.44rem;
@@ -19,7 +19,7 @@ export const StyledSkeletonCountries = styled.section`
   }
   .card__body {
     & > div:not(.card__img) {
-      margin: 1.5rem;
+      margin: 1.1rem 1.5rem;
     }
     .card__h2 {
       background: ${p => p.theme.backgroundSkeleton};

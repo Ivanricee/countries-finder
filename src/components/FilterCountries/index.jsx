@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
-import { IoSearchSharp } from 'react-icons/io5'
+import { IoSearchSharp, IoCloseCircleSharp } from 'react-icons/io5'
 import { useDispatch, useSelector } from 'react-redux'
 import { StyledFilterCountries } from './styles'
-import { debounce } from '../../utils'
+import { debounce, throtle } from '../../utils'
 import { fetchCountriesFilter } from '../../store/actions/AppActions'
 
 export const FilterCountries = () => {
@@ -11,6 +11,12 @@ export const FilterCountries = () => {
 
   const inputRef = useRef(null)
   const selectRef = useRef(null)
+  const clearInput = () => {
+    if (inputRef.current.value.length > 0) {
+      inputRef.current.value = ''
+      dispatch(fetchCountriesFilter(null, null)) // name,region
+    }
+  }
 
   const handleCountryNameChange = e => {
     const countryValue = e.target.value
@@ -37,6 +43,11 @@ export const FilterCountries = () => {
             prevFilterValue.type === 'input' ? prevFilterValue.value : ''
           }
         />
+        <button type="button" onClick={throtle(clearInput, 700)}>
+          <i>
+            <IoCloseCircleSharp />
+          </i>
+        </button>
       </div>
       <div className="filter__select">
         <select
@@ -49,12 +60,14 @@ export const FilterCountries = () => {
           <option value="" disabled hidden>
             Filter by Region
           </option>
-          <option vale="Africa">Africa</option>
-          <option vale="Americas">Americas</option>
-          <option vale="Asia">Asia</option>
-          <option vale="Europe">Europe</option>
-          <option vale="Oceania">Oceania</option>
-          {prevFilterValue.type === 'region' && <option value="">All</option>}
+          {prevFilterValue.type === 'region' && (
+            <option value="">All Region</option>
+          )}
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
         </select>
       </div>
     </StyledFilterCountries>

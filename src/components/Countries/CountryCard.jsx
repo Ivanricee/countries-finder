@@ -5,9 +5,16 @@ import { useNearScreen } from '../../hooks/useNearScreen'
 export const CountryCard = ({ country, className }) => {
   const [show, observed] = useNearScreen()
   return (
-    <div ref={observed} className={className}>
+    <article
+      ref={observed}
+      className={className}
+      aria-label={`card ${country.name.common}`}
+    >
       {show && (
-        <Link to={`country/${country.name.common}`} state={country}>
+        <Link
+          to={`country/${encodeURIComponent(country.name.common)}`}
+          state={country}
+        >
           <img
             src={country.flags.svg}
             alt={`flag ${country.name.common}`}
@@ -18,7 +25,7 @@ export const CountryCard = ({ country, className }) => {
             <h2>{country.name.common}</h2>
             <div>
               <strong>Population:</strong>
-              <p>{country.population}</p>
+              <p>{country.population.toLocaleString()}</p>
             </div>
             <div>
               <strong>Region:</strong>
@@ -31,6 +38,6 @@ export const CountryCard = ({ country, className }) => {
           </div>
         </Link>
       )}
-    </div>
+    </article>
   )
 }

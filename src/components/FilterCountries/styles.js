@@ -20,12 +20,31 @@ export const StyledFilterCountries = styled.section`
       border-style: none;
       flex: 1;
     }
+    button {
+      border: 0;
+      background: transparent;
+      color: ${p => p.theme.color};
+      padding: 0;
+      inline-size: 0;
+      i {
+        transform: translateY(17%);
+        :hover {
+          transition: opacity 0.2s ease-in;
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
     i {
-      margin-inline-end: 1.5rem;
       font-size: 1.25rem;
-      transform: translateY(25%);
+      opacity: 0.7;
+      :nth-of-type(1) {
+        transform: translateY(25%);
+        margin-inline-end: 1.5rem;
+      }
     }
   }
+
   .filter__select {
     margin-block-start: 2.5rem;
     background: ${p => p.theme.backgroundHeader};

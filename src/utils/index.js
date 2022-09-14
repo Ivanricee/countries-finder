@@ -30,7 +30,6 @@ export const throtle = (callback, delay) => {
   let inThrothle = false
   return (...args) => {
     if (inThrothle) return
-    console.log('throtled')
     callback(...args)
     inThrothle = true
     setTimeout(() => {
