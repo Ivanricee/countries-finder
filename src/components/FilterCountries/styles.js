@@ -5,6 +5,7 @@ export const StyledFilterCountries = styled.section`
   color: ${p => p.theme.color};
 
   .filter__input {
+    transition: 0.1s ease-in-out;
     background: ${p => p.theme.backgroundHeader};
     display: flex;
     align-items: center;

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
+  transition: 0.1s ease-in-out;
   display: flex;
   position: relative;
   align-items: center;

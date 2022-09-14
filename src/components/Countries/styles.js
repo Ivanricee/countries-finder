@@ -25,6 +25,7 @@ export const StyledCountries = styled.section`
   }
 `
 export const StyledCountryCard = styled(CountryCard)`
+  transition: 0.1s ease-in-out;
   background: ${p => p.theme.backgroundHeader};
   color: ${p => p.theme.color};
   inline-size: 16.44rem;
