@@ -6,8 +6,8 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Videos](#videos)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I practiced](#what-i-practiced)
@@ -27,30 +27,27 @@ Users should be able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode
 
-### Screenshot
-
-![](./screenshot/countries-darkmode.png)
-![](./screenshot/countries-lighmode.png)
-![](./screenshot/country-darkmode.png)
-![](./screenshot/country-lightmode.png)
-![](./screenshot/mobile-countries-darkmode.png)
-![](./screenshot/mobile-countries-lightmode.png)
-![](./screenshot/mobile-country-darkmode.png)
-![](./screenshot/mobile-country-lightmode.png)
-
 ### Links
 
-- Live Site URL: [https://countries-finder-ivanrice.vercel.app](https://countries-finder-ivanrice.vercel.app)
+- Live Site URL: [countries-finder-ivanrice.vercel.app](https://countries-finder-ivanrice.vercel.app)
+
+### Videos
+
+https://user-images.githubusercontent.com/13322969/213577063-0500ba2d-b251-40f4-9eef-db2008e11f32.mp4
+
+https://user-images.githubusercontent.com/13322969/213577662-bb78ea50-b139-49d4-b045-d7f29b816d18.mp4
+
 
 ## My process
 
 ### Built with
 
-- [React](https://reactjs.org/) - JS library
-- Redux, Redux thunk
-- React router
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white) 
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)  
+
 - Lazy load with Intersection Observer.
-- [Styled Components](https://styled-components.com/) - For styles
 - Mobile-first workflow
 - Semantic HTML5 markup
 - Flexbox for components.
