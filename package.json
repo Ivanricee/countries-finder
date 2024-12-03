@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
-    "axios": "^0.24.0",
+    "axios": "^1.7.8",
     "history": "^5.1.0",
     "intersection-observer": "^0.12.2",
     "react": "^17.0.2",
